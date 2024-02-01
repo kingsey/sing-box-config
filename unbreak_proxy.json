@@ -2,8 +2,8 @@
     "version": 1,
     "rules": [
         {
-            "domain": [
-                "www.dogfight360.com"
+            "domain_suffix": [
+                "123.com"
             ]
         }
     ]

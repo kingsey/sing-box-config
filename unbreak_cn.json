@@ -2,6 +2,9 @@
     "version": 1,
     "rules": [
         {
+            "domain":[
+                "www.dogefight360.com"
+            ],
             "domain_keyword": [
                 "tracker"
             ],
