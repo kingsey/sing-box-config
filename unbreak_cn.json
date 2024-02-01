@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_keyword": [
+                "tracker"
+            ],
+            "domain_suffix": [
+                "cm.steampowered.com",
+                "steamserver.net"
+            ]
+        }
+    ]
+}
