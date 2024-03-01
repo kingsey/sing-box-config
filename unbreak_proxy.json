@@ -2,8 +2,8 @@
     "version": 1,
     "rules": [
         {
-            "domain_suffix": [
-                "123.com"
+            "domain": [
+                "wallhaven.cc","thepiratebay.org"
             ]
         }
     ]
