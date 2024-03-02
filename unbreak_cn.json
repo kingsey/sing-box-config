@@ -3,6 +3,7 @@
     "rules": [
         {
             "domain": [
+                "cn.pool.ntp.org",
                 "www.dogefight360.com",
                 "1337.abcvg.info",
                 "aboutbeautifulgallopinghorsesinthegreenpasture.online",
