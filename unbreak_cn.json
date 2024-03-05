@@ -6,7 +6,6 @@
                 "tracker"
             ],
             "domain": [
-                "registry-1.docker.io",
                 "pool.ntp.org",
                 "cn.pool.ntp.org",
                 "www.dogefight360.com",
