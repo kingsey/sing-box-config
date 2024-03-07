@@ -6,6 +6,7 @@
                 "tracker"
             ],
             "domain": [
+                "api.xhofe.top",
                 "pool.ntp.org",
                 "cn.pool.ntp.org",
                 "www.dogefight360.com",
@@ -50,6 +51,7 @@
                 "y.paranoid.agency"
             ],
             "domain_suffix": [
+                "mypikpak.com",
                 "cm.steampowered.com",
                 "steamserver.net"
             ]
