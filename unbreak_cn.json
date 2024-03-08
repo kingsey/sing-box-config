@@ -6,8 +6,6 @@
                 "tracker"
             ],
             "domain": [
-                "pool.ntp.org",
-                "cn.pool.ntp.org",
                 "www.dogefight360.com",
                 "aboutbeautifulgallopinghorsesinthegreenpasture.online",
                 "bt.okmp3.ru",
@@ -50,8 +48,7 @@
                 "y.paranoid.agency"
             ],
             "domain_suffix": [
-                "cm.steampowered.com",
-                "steamserver.net"
+                "pool.ntp.org"
             ]
         }
     ]
