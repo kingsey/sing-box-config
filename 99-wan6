@@ -1,0 +1,31 @@
+#!/bin/sh
+LOG_FILE="/tmp/ipv6_update.log"
+
+[ "$ACTION" = ifupdate -a -n "$INTERFACE" -a "$INTERFACE" = "wan6" ] || exit 0
+[ -z "$IFUPDATE_ADDRESSES" -a -z "$IFUPDATE_DATA" ] || exit 0
+# 获取当前时间戳
+timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+# echo "[$timestamp] Script is running..." >> "$LOG_FILE"
+
+# 获取当前IPv6地址
+current_ipv6=$(ip -6 addr show dev wan | grep inet6 | awk '{print $2}')
+# echo "[$timestamp] Current IPv6: $current_ipv6" >> "$LOG_FILE"
+sleep 15
+
+# 获取更新后的IPv6地址
+updated_ipv6=$(ip -6 addr show dev wan | grep inet6 | awk '{print $2}')
+# echo "[$timestamp] Updated IPv6: $updated_ipv6" >> "$LOG_FILE"
+
+# 检查IPv6是否发生变化
+if [ "$current_ipv6" != "$updated_ipv6" ]; then
+    echo "[$timestamp] IPv6地址发生变化，重新拨号..." >> "$LOG_FILE"
+    
+    # 在此处执行重新拨号的命令，例如使用ifdown和ifup
+    ifdown wan6
+    sleep 1
+    ifup wan6
+    
+    # 你也可以根据你的网络环境和拨号方式进行相应的操作
+else
+    # echo "[$timestamp] IPv6地址未发生变化，无需重新拨号" >> "$LOG_FILE"
+fi
