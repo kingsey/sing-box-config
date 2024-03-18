@@ -3,7 +3,11 @@
     "rules": [
         {
             "domain": [
-                "wallhaven.cc","thepiratebay.org","services.googleapis.cn"
+                "thepiratebay.org",
+                "services.googleapis.cn"
+            ],
+            "domain_suffix": [
+                "wallhaven.cc"
             ]
         }
     ]
