@@ -7,7 +7,8 @@
                 "services.googleapis.cn"
             ],
             "domain_suffix": [
-                "wallhaven.cc"
+                "wallhaven.cc",
+                "surrit.com"
             ]
         }
     ]
